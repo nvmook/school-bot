@@ -8,17 +8,16 @@ Telegram-бот для школы. Скоро здесь будет что-то 
 
 ## 🛠 Стек
 
-- **Язык:** TypeScript + [grammY](https://grammy.dev)
+- **Язык:** JavaScript (Node.js 20+) + [grammY](https://grammy.dev)
 - **Хостинг:** [Vercel](https://vercel.com) (serverless-функция, бот работает через webhook)
-- **База данных:** [Turso](https://turso.tech) (libSQL / SQLite) — подключим позже
 
 ## 📁 Структура
 
 ```
-api/bot.ts              — webhook-функция для Vercel (/api/bot)
-src/bot.ts              — сам бот: команды и обработчики
-scripts/dev.ts          — локальный запуск через polling
-scripts/set-webhook.ts  — привязка бота к адресу на Vercel
+api/bot.js              — webhook-функция для Vercel (/api/bot)
+src/bot.js              — сам бот: команды и обработчики
+scripts/dev.js          — локальный запуск через polling
+scripts/set-webhook.js  — привязка бота к адресу на Vercel
 ```
 
 ## 🚀 Локальный запуск

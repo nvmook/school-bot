@@ -7,10 +7,10 @@ const handleUpdate = webhookCallback(bot, "std/http", {
   secretToken: process.env.WEBHOOK_SECRET || undefined,
 });
 
-export async function POST(request: Request): Promise<Response> {
+export async function POST(request) {
   return handleUpdate(request);
 }
 
-export function GET(): Response {
+export function GET() {
   return new Response("School bot webhook is up ✅");
 }
